@@ -190,6 +190,30 @@
 # 然後打開 app/build/reports/cucumber/cucumber-report.html
 ```
 
+## .NET 專案
+
+倉庫內包含 `GenAiDemo.Net` 目錄的 ASP.NET Core 8 範例實作。
+
+### 建置
+
+```bash
+dotnet build GenAiDemo.Net/src/GenAiDemo.Interfaces/GenAiDemo.Interfaces.csproj
+```
+
+### 執行 Web API
+
+```bash
+dotnet run --project GenAiDemo.Net/src/GenAiDemo.Interfaces/GenAiDemo.Interfaces.csproj
+```
+
+### 執行測試
+
+```bash
+dotnet test GenAiDemo.Net/tests/GenAiDemo.UnitTests/GenAiDemo.UnitTests.csproj
+dotnet test GenAiDemo.Net/tests/GenAiDemo.Specs/GenAiDemo.Specs.csproj
+dotnet test GenAiDemo.Net/tests/GenAiDemo.ArchTests/GenAiDemo.ArchTests.csproj
+```
+
 ## UML 圖表
 
 本專案使用 PlantUML 生成各種 UML 圖表，包括：

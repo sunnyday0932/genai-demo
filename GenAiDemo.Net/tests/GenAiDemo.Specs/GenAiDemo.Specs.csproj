@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <IsPackable>false</IsPackable>
+    <GenerateSpecFlowSingleFileAnalyzerOutput>true</GenerateSpecFlowSingleFileAnalyzerOutput>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="SpecFlow" Version="3.9.74" />
+    <PackageReference Include="SpecFlow.xUnit" Version="3.9.74" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\GenAiDemo.Application\GenAiDemo.Application.csproj" />
+    <ProjectReference Include="..\..\src\GenAiDemo.Domain\GenAiDemo.Domain.csproj" />
+  </ItemGroup>
+</Project>
