@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="NetArchTest.Rules" Version="1.5.0" />
+    <PackageReference Include="xunit" Version="2.5.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\GenAiDemo.Application\GenAiDemo.Application.csproj" />
+    <ProjectReference Include="..\..\src\GenAiDemo.Domain\GenAiDemo.Domain.csproj" />
+    <ProjectReference Include="..\..\src\GenAiDemo.Infrastructure\GenAiDemo.Infrastructure.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="xunit" Version="2.5.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.5.1" />
+    <PackageReference Include="Moq" Version="4.20.70" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\GenAiDemo.Application\GenAiDemo.Application.csproj" />
+    <ProjectReference Include="..\..\src\GenAiDemo.Domain\GenAiDemo.Domain.csproj" />
+  </ItemGroup>
+</Project>
